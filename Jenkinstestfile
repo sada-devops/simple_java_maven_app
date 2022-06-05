@@ -5,7 +5,7 @@ node{
         }
     stage("Maven Build"){
             sh '''mvn clean package
-            mv target/*.war target/node-test.war'''
+            mv target/*.war target/node-test1.war'''
         }
     stage("deploy-dev"){
             sh 'cp **/*war /home/sada/apache-tomcat-9.0.63/webapps'
