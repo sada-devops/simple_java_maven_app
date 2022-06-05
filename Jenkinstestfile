@@ -1,7 +1,7 @@
 node{
     
     stage("Git Checkout"){
-        git 'https://github.com/srinivas1987devops/myweb.git'
+        git 'https://github.com/sada-devops/simple_java_maven_app.git'
         }
     stage("Maven Build"){
             sh '''mvn clean package
